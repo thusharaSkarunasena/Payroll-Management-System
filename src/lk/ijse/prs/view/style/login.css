@@ -1,0 +1,47 @@
+.background{
+    -fx-background-color: #005CB9;
+}
+
+.logInPane{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-border-color: #F28C20;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+}
+
+.logInPane-logInBtn{
+    -fx-background-color: #FF7800;
+    -fx-background-radius: 22;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.logInPane-logInBtn:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 22;
+    -fx-text-fill: #FF7800;
+    -fx-border-color: #FF7800;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+}
+
+.stagePane-minimizeBtn{
+    -fx-text-fill: #B3B3B3;
+    -fx-alignment: top-center;
+}
+
+.stagePane-minimizeBtn:hover{
+    -fx-text-fill: #000000;
+}
+
+.stagePane-closeBtn{
+    -fx-text-fill: #B3B3B3;
+    -fx-alignment: bottom-center;
+}
+
+.stagePane-closeBtn:hover{
+    -fx-text-fill: #DF574B;
+}

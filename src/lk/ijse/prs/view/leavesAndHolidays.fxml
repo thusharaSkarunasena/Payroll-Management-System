@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="890.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.prs.controller.LeavesAndHolidaysController">
+    <stylesheets>
+        <URL value="@/lk/ijse/prs/view/style/leavesandholidays.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="22.0" layoutY="38.0" prefHeight="578.0" prefWidth="843.0" style="-fx-border-color: gray; -fx-border-radius: 10;">
+         <children>
+            <Pane layoutX="14.0" layoutY="28.0" prefHeight="489.0" prefWidth="296.0" style="-fx-border-color: gray; -fx-border-radius: 10;">
+               <children>
+                  <JFXTextField fx:id="employeeIDTF" labelFloat="true" layoutX="31.0" layoutY="99.0" mouseTransparent="true" prefHeight="25.0" prefWidth="235.0" promptText="Employee ID">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="monthTF" labelFloat="true" layoutX="31.0" layoutY="176.0" mouseTransparent="true" prefHeight="25.0" prefWidth="235.0" promptText="Month">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="holidayTypeTF" labelFloat="true" layoutX="31.0" layoutY="253.0" mouseTransparent="true" prefHeight="25.0" prefWidth="235.0" promptText="Holiday Type">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="viewMoreBtn" buttonType="RAISED" layoutX="26.0" layoutY="388.0" onAction="#viewMore_onAction" prefHeight="30.0" prefWidth="100.0" styleClass="btnPane-newBtn" stylesheets="@style/employee.css" text="view More">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Century Gothic Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="181.0" layoutY="388.0" onAction="#clearBtn_onAction" prefHeight="30.0" prefWidth="81.0" styleClass="btnPane-updateBtn" stylesheets="@style/employee.css" text="Clear">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Century Gothic Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="descriptionTF" labelFloat="true" layoutX="31.0" layoutY="324.0" mouseTransparent="true" prefHeight="25.0" prefWidth="235.0" promptText="Description">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+            <TableView fx:id="leavesAndHolidayTbl" layoutX="341.0" layoutY="28.0" onMouseClicked="#leavesAndHolidayTbl_onMouseClick" prefHeight="489.0" prefWidth="487.0">
+               <columns>
+                  <TableColumn prefWidth="98.0" text="Employee ID" />
+                  <TableColumn prefWidth="142.0" text="date" />
+                  <TableColumn prefWidth="105.0" text="Holiday Type" />
+                  <TableColumn maxWidth="133.0" prefWidth="122.0" text="Description" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="refreshBtn" buttonType="RAISED" layoutX="709.0" layoutY="534.0" onAction="#refreshBtn_onAction" prefHeight="30.0" prefWidth="100.0" styleClass="btnPane-saveBtn" stylesheets="@style/employee.css" text="Refresh">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Century Gothic Italic" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+.stagePane-minimizeBtn{
+    -fx-text-fill: #B3B3B3;
+    -fx-alignment: top-center;
+}
+
+.stagePane-minimizeBtn:hover{
+    -fx-text-fill: #000000;
+}
+
+.stagePane-closeBtn{
+    -fx-text-fill: #B3B3B3;
+    -fx-alignment: bottom-center;
+}
+
+.stagePane-closeBtn:hover{
+    -fx-text-fill: #DF574B;
+}
+
+.navPane-subTitle{
+    -fx-background-color:#1A2C47;
+}
+
+.navPane-subTitle:hover{
+    -fx-background-color:#204767;
+}
+
+.navPane-logOutExit{
+    -fx-background-color:#204767;
+}
+
+.navPane-logOutExit:hover{
+    -fx-background-color:#1FB8F4;
+}

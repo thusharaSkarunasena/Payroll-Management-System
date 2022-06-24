@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="logInAnchPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.prs.controller.LogInController">
+    <stylesheets>
+        <URL value="@/lk/ijse/prs/view/style/login.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="25.0" prefHeight="376.0" prefWidth="602.0" styleClass="background" stylesheets="@style/login.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/logo_icon.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="284.0" layoutY="22.0" prefHeight="328.0" prefWidth="277.0" styleClass="logInPane" stylesheets="@style/login.css">
+               <children>
+                  <Label layoutX="32.0" layoutY="50.0" text="LogIn Here, ">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="usenameTF" focusColor="#005cb9" labelFloat="true" layoutX="43.0" layoutY="104.0" onAction="#usenameTF_onAction" prefHeight="25.0" prefWidth="180.0" promptText="Username" />
+                  <JFXPasswordField fx:id="passwordPF" focusColor="#005cb9" labelFloat="true" layoutX="43.0" layoutY="169.0" onAction="#passwordPF_onAction" prefHeight="25.0" prefWidth="180.0" promptText="Password" />
+                  <JFXButton fx:id="logInBtn" buttonType="RAISED" layoutX="165.0" layoutY="245.0" onAction="#logInBtn_onAction" prefHeight="29.0" prefWidth="81.0" styleClass="logInPane-logInBtn" stylesheets="@style/login.css" text="Log In">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label fx:id="statusLbl" layoutX="38.0" layoutY="211.0" prefHeight="34.0" prefWidth="189.0" text="  " textFill="#dd1124">
+                     <font>
+                        <Font name="SansSerif Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="77.0" layoutY="206.0" text="PayRoll System" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="54.0" text="Wel Come to workday." textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="353.0" prefHeight="18.0" prefWidth="205.0" text="Copyright       2018 by Thushara" textFill="#898989">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="29.0" layoutX="286.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/icons8_Copyright_15px_3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="2.0" layoutY="-4.0" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="stagePane_closeBtn" alignment="CENTER" layoutX="565.0" onMouseClicked="#stagePane_closeBtn_onMouseClicked" prefHeight="34.0" prefWidth="32.0" styleClass="stagePane-closeBtn" stylesheets="@style/login.css" text="X" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="stagePane_minimizeBtn" alignment="CENTER" layoutX="522.0" layoutY="-1.0" onMouseClicked="#stagePane_minimizeBtn_onMouseClicked" prefHeight="2.0" prefWidth="32.0" styleClass="stagePane-minimizeBtn" stylesheets="@style/login.css" text="-" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="11.0" text="workday" textFill="#525151">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="11.0" text=" PayRoll System" textFill="#525151">
+               <font>
+                  <Font name="Times New Roman Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
